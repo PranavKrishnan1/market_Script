@@ -1,0 +1,12 @@
+name: Eve_margins
+title: Eve_margins
+username:
+account: cannis
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 2327895
+bundleId: 3168801
+url: https://cannis.shinyapps.io/Eve_margins/
+when: 1589942339.31362
+asMultiple: FALSE
+asStatic: FALSE

@@ -1,6 +1,6 @@
 profit <- function(num){
   
-  daata=fromJSON(paste(url,num,sep=""))
+  daata=fromJSON(paste("https://esi.evetech.net/latest/markets/10000002/orders/?datasource=tranquility&order_type=all&page=1&type_id=",num,sep=""))
 
   df = split(daata,daata$is_buy_order)
   if(length(df)==0){margin=list(0,0,0,0)}
@@ -18,7 +18,8 @@ profit <- function(num){
 
 
 volume <- function(num){
-  vol=fromJSON(paste(url2,num,sep=""))
+  
+  vol=fromJSON(paste("https://esi.evetech.net/latest/markets/10000002/history/?datasource=tranquility&type_id=",num,sep=""))
   p = nrow(vol)
   return(vol$volume[p])
 }
